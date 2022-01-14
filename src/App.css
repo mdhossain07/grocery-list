@@ -1,38 +1,102 @@
-.App {
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #F1F5F8;
+  font-family: 'Poppins', sans-serif;
+}
+
+.grocery-container{
+  background: white;
+  border-radius: 6px;
+  margin: 100px auto;
+  padding: 25px 0;
+  width: 40%;
+  box-shadow: 5px 5px 20px lightgray;
+}
+
+input{
+  text-indent: 15px;
+  border: none;
+  border-radius: 2px;
+  margin-left: 50px;
+  margin-bottom: 25px;
+  background-color: #EBEFF2;
+  height: 32px;
+  width: 70%;
+}
+
+.heading {
   text-align: center;
+  font-size: 30px;
+  padding: 15px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.submit-btn{
+  background-color: #A5D5F8;
+  border: none;
+  font-size: 14px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 8px 15px;
+  cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.grocery-items {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 10px 55px;
 }
 
-.App-link {
-  color: #61dafb;
+.edit-btn , .del-btn{
+  font-size: 13px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  align-items: center;
+  padding: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button-container{
+  margin-left: auto;
+}
+
+.edit-btn {
+  color : green;
+}
+
+.del-btn {
+  color: red ; 
+}
+
+.clear-btn {
+  background: transparent;
+  padding: 5px;
+  display: block;
+  margin: 10px auto;
+  border: none;
+  color: red;
+  cursor: pointer;
+}
+
+.alert-danger{
+  text-align: center;
+  font-size: 13px;
+  color : #9D1C59;
+  background-color: #F8D7DA;
+  margin: auto;
+  width: 85%;
+}
+
+.alert-success{
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 13px;
+  color : #155724;
+  background-color: #D4EDDA;
+  margin: auto;
+  width: 85%;
 }
